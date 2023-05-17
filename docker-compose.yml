@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  nginx:
+    image: 865600225732.dkr.ecr.ap-south-1.amazonaws.com/testrepo1:latest
+    ports:
+      - 80:80
+    networks:
+      - nginx-network
+
+networks:
+  nginx-network:
+
